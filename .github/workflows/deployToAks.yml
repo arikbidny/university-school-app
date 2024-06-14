@@ -1,0 +1,31 @@
+name: Deploy to AKS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Install Kubernetes CLI
+        run: sudo snap install kubectl --classic
+
+      - name: Connect to AKS cluster
+        run: az aks get-credentials --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --name ${{ secrets.AZURE_AKS_NAME }}
+
+      - name: Deploy to AKS
+        run: kubectl apply -f k8s/
+
+      - name: Logout of Azure
+        run: az logout

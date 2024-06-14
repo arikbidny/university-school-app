@@ -1,3 +1,44 @@
+# University School Application
+
+Welcome to the University School Application! This is a Next.js project that allows you to manage various aspects of a university school.
+
+## Getting Started
+
+To get started with the development server, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/university-school-app.git`
+2. Navigate to the project directory: `cd university-school-app`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run dev`
+
+The development server will be running at [http://localhost:3000](http://localhost:3000). Open this URL in your browser to see the application.
+
+## Features
+
+- User authentication and authorization
+- Student management
+- Course management
+- Grade management
+- Attendance tracking
+
+## Technologies Used
+
+This project is built with the following technologies:
+
+- Next.js: A React framework for building server-side rendered and static websites.
+- Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
+- MongoDB: A NoSQL database for storing application data.
+- MSSQL: A relational database for storing application data.
+- Express: A minimal and flexible Node.js web application framework.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/your-username/university-school-app).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

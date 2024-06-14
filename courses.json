@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "Introduction to Programming",
+    "description": "This course introduces the basics of programming.",
+    "modules": [
+      {
+        "id": 1,
+        "name": "Variables and Data Types",
+        "description": "Learn about variables and data types in programming."
+      },
+      {
+        "id": 2,
+        "name": "Control Structures",
+        "description": "Understand how to control the flow of a program."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Advanced Programming",
+    "description": "This course dives deeper into programming concepts.",
+    "modules": [
+      {
+        "id": 1,
+        "name": "Data Structures",
+        "description": "Learn about different types of data structures."
+      },
+      {
+        "id": 2,
+        "name": "Algorithms",
+        "description": "Understand how to create efficient algorithms."
+      }
+    ]
+  }
+]
